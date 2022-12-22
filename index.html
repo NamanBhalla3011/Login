@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "roboto";
+      }
+      .container {
+        max-width: 1366px;
+        width: 100%;
+        background-color: #f2f2f2;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+      }
+
+      .container .login {
+        width: 50%;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .container .login button {
+        max-width: 380px;
+        width: 100%;
+        height: 54px;
+        background-color: #293897;
+        color: white;
+        border-radius: 12px;
+        border: none;
+        font-size: 16px;
+        margin-top: 35px;
+        position: relative;
+      }
+      .container .login button::after {
+        content: "";
+        background-repeat: no-repeat;
+        background-image: url(images/Path\ 31076.png);
+        position: absolute;
+        height: 11px;
+        width: 18px;
+        right: 16px;
+        top: 21px;
+      }
+      .container .banner {
+        height: 100vh;
+        background-color: #293895;
+        position: relative;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+      }
+      .container .banner img.logo {
+        margin-top: 200px;
+        width: 250px;
+      }
+      .container .banner img.bottom {
+        /* position: fixed; */
+        /* bottom: 0; */
+        width: 100%;
+        height: auto;
+      }
+      .container .login button:hover {
+        background-color: #58585a;
+        cursor: pointer;
+      }
+
+      @media (max-width: 699px) {
+        .container {
+          flex-direction: column-reverse;
+          padding: 0;
+        }
+        .container .banner {
+          width: 100%;
+          height: 69vh;
+        }
+        .container .banner img.bottom {
+          width: 100%;
+          max-width: 615px;
+        }
+        .container .banner img.logo {
+          margin-top: 30px;
+        }
+        .container .login {
+          padding: 30px;
+          width: 100%;
+          height: 31vh;
+        }
+        .container .login button {
+          margin-top: 30px;
+        }
+      }
+
+      @media (max-width: 326px) {
+        .container .login button {
+          margin-top: 10px;
+        }
+        .container .login {
+          margin: 30px 0;
+          padding: 0 30px;
+          height: auto;
+        }
+        .container .banner img.logo {
+          margin-top: 30px;
+        }
+        .container .banner {
+          /* width: 100%; */
+          height: 67vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="banner">
+        <img src="images/Logo.png" alt="" class="logo" />
+        <img class="bottom" src="images/banner3.webp" alt="" />
+      </div>
+      <div class="login">
+        <p>
+          Login to your <br />
+          <span style="font-size: 28px"> Spice money account </span>
+        </p>
+        <button>Login via Google</button>
+      </div>
+    </div>
+  </body>
+</html>
